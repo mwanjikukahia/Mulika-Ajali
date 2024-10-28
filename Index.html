@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mulika Ajali Initiative - Home</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="top-header">
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="contact-info">
+            <a href="mailto:okoamaisha@mulikaajali.co.ke"><i class="fas fa-envelope"></i> okoamaisha@mulikaajali.co.ke</a>
+            <a href="tel:+123456789"><i class="fas fa-phone"></i> +123 456 789</a>
+        </div>
+        <button class="cta-button">Donate</button>
+    </div>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"></a>
+      <div class="logo">
+        <img src="images/Logo1.jpg" alt="Logo" width="70" height="65">
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html"><B>Home</B></a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"><b>About Us</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="report.html"><b>Report</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="safety.html"><b>Safety Tips</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><b>Contact</b></a></li>
+        </ul>
+        <a href="report.html" class="report-button ms-lg-3"><b>Report an Incident</b></a>
+      </div>
+    </div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </nav>
+
+<!-- Slide-out Menu -->
+<div class="side-menu" id="sideMenu">
+  <button class="close-btn" onclick="toggleMenu()">✕</button>
+  <div class="menu-content">
+      <img src="images/Logo1.jpg" alt="Mulika Ajali Logo" class="menu-logo">
+      <h4><b>About Us</b></h4>
+      <p>Mulika Ajali Initiative  focuses on road safety and accident awareness...</p>
+      <h4><b>Contact Us</b></h4>
+      <p>okoamaisha@mulikaajali.or.ke<br>+254 712 345 678<br>View Park Towers, Nairobi, Kenya. <br> Address: 20717-00100</p>
+      <!-- Social Icons (add your own links and icons here) -->
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <!-- Additional Menu Links -->
+      <nav class="menu-links">
+          <a href="#">Home</a>
+          <a href="#">News</a>
+          <a href="#">Events</a>
+          <a href="#">Donate</a>
+      </nav>
+  </div>
+</div>
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+<!-- Donate button for small screens -->
+<button class="donate-btn" id="donateButton" onclick="window.location.href='doonate.html'">Donate</button>
+
+  <!-- Sliding Section -->
+  <div class="container my-4 text-center">
+    <marquee hspace="10" scrollamount="20" direction="left" width="100%" onmouseover="this.stop()" onmouseout="this.start()">
+      <img src="images/img1.jpg" alt="Image 1" width="800" height="200">
+      <img src="images/img2.jpg" alt="Image 2" width="800" height="200">
+      <img src="images/img3.jpg" alt="Image 3" width="800" height="200">
+    </marquee>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1><b>"Mulika Ajali,Okoa Maisha."     "Highlight Accidents, Save Lives."</b></h1>
+    <p>Join us in raising awareness and promoting safety for all on the road.</p>
+    <div class="row">
+        <div class="col-md-4">
+          <div class="counter" data-target="8700">0</div>
+          <div class="counter-title">Reports Filed</div>
+        </div>
+        <div class="col-md-4">
+          <div class="counter" data-target="5547">0</div>
+          <div class="counter-title">Safety Tips Shared</div>
+        </div>
+        <div class="col-md-4">
+          <div class="counter" data-target="11225">0</div>
+          <div class="counter-title">Volunteers Engaged</div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="rotating-quotes"></div>
+        <p id="quote">"A small action today can make a big impact tomorrow!"</p>
+    </div>
+  </section>
+<!-- Section 2 -->
+<div class="road-safety-section">
+  <div class="road-safety-image animate-image">
+    <img src="images/ROAD CRASH.jpg" alt="Road Safety Awareness">
+    <div class="fundamental-principle"><b>1 Fundamental Principle</b></div>
+  </div>
+  <div class="road-safety-content animate-content">
+    <h4><b>WE ARE COMMITTED TO</b></h4>
+    <h2 class="slide-in">Our Road Safety Principles</h2>
+    <p><b>Our mission is guided by core principles that promote safety and responsibility on the road:</b></p>
+    
+    <div class="principles-container">
+      <ul class="road-safety-principles">
+        <li>Responsibility</li>
+        <li>Alertness</li>
+        <li>Respect for Laws</li>
+        <li>Care for Pedestrians</li>
+        <li>Defensive Driving</li>
+        <li>Vehicle Maintenance</li>
+        <li>Environmental Protection</li>
+      </ul>
+    </div>
+
+    <button class="learn-more-button slide-in">Learn More</button>
+  </div>
+</div>
+
+<!-- section 3 -->
+<section id="what-we-do">
+  <div class="section-header">
+    <h1 class="header-text">Our Programs</h1>
+    <div class="underline-animation"></div>
+</div>
+  <h2><b>What We Do</b></h2>
+  <div class="programs">
+      <div class="program-card">
+          <div class="icon">🚦</div>
+          <h3><b>Road Safety Campaigns</b></h3>
+          <p>We organize national campaigns such as the “Mulika Ajali, Okoa Maisha” initiative, which spreads awareness about the importance of road safety through media, events, and community engagement.</p>
+          <a href="#" class="read-more">Read more <span class="pointer">→</span></a>
+      </div>
+      <div class="program-card">
+          <div class="icon">🚍</div>
+          <h3><b>Public Transport Training</b></h3>
+          <p>We work with stakeholders to design and implement training programs that improve the skills and knowledge of drivers and conductors, ensuring they handle their roles safely.</p>
+          <a href="#" class="read-more">Read more <span class="pointer">→</span></a>
+      </div>
+      <div class="program-card">
+          <div class="icon">💪</div>
+          <h3><b>Wellness Programs</b></h3>
+          <p>We promote the health of public transport workers by offering workshops on stress management, health checks, and wellness in the workplace.</p>
+          <a href="#" class="read-more">Read more <span class="pointer">→</span></a>
+      </div>
+      <div class="program-card">
+          <div class="icon">💰</div>
+          <h3><b>Fundraising for Road Safety Initiatives</b></h3>
+          <p>We raise funds for projects that focus on improving road safety and creating a positive work environment for public transport workers.</p>
+          <a href="#" class="read-more">Read more <span class="pointer">→</span></a>
+      </div>
+      <div class="program-card">
+          <div class="icon">📜</div>
+          <h3><b>Policy Advocacy</b></h3>
+          <p>We work closely with government bodies to influence the creation of safer road infrastructure and better working conditions for drivers and conductors.</p>
+          <a href="#" class="read-more">Read more <span class="pointer">→</span></a>
+      </div>
+      <div class="program-card ">
+          <h3><b>Explore Our Programs</b></h3>
+          <p>Discover the various initiatives we undertake to promote road safety and well-being among public transport workers.</p>
+          <a href="#" class="read-more">Read more <span class="pointer">→</span></a>
+      </div>
+  </div>
+</section>
+
+
+<!-- Get Involved Section -->
+<div class="get-involved-section">
+    <div class="floating-icons">
+        <div class="icon">🚸</div>
+        <div class="icon">🚦</div>
+        <div class="icon">🚧</div>
+    </div>
+    <div class="get-involved-content">
+        <h2><b>Join Us in</b> <span id="dynamic-text-wrapper">
+            <span id="dynamic-icon">🤲</span> 
+            <span id="dynamic-text">Making Roads Safer</span>
+        </span></h2>
+        <p><b>Become a part of our mission to promote road safety and prevent accidents. <br> Whether you want to volunteer, share safety tips,<br> or report incidents, there’s a way for everyone to get involved.</b></p>
+        <button class="get-involved-button">Learn More</button>
+    </div>
+    <div class="get-involved-image">
+        <img src="images/Crash.jpg" alt="Road Safety Awareness" height="400px" width="500px">
+    </div>
+</div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-container">
+        
+        <!-- Location Map Section -->
+        <div class="footer-section">
+            <h3>Our Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d31910.572591709257!2d36.7961929084298!3d-1.280744340262088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-1.2787278!2d36.8176506!4m5!1s0x182f10d23eb49bbb%3A0xf5ebdd7d189417a1!2sNairobi!3m2!1d-1.2828469999999998!2d36.8159352!5e0!3m2!1sen!2ske!4v1729951150466!5m2!1sen!2ske" class="map" allowfullscreen="" loading="lazy"></iframe>
+            <p>Mulika Ajali Initiative HQ<br>View Park Towers, Utalii Street, Nairobi, Kenya</p>
+
+                    <!-- Social Links Section -->
+            <h3>Follow Us</h3>
+            <p>Stay connected with us on social media:</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="hashtag"><b>#TogetherForRoadSafety</b></p>
+        </div>
+        <!-- Get Involved Section -->
+        <div class="footer-section">
+            <h3>Get Involved</h3>
+            <ul class="involved-links">
+                <li><a href="#">Become a Volunteer</a></li>
+                <li><a href="#">Donate to Support Us</a></li>
+                <li><a href="#">Partner with Us</a></li>
+                <li><a href="#">Report a Safety Issue</a></li>
+            </ul>
+            <p><b>Your support makes a safer world.</b></p>
+            <p class="donation-reminder"><strong><b>Remember:</b></strong> Your donations directly support our initiatives for road safety and community welfare!</p>
+        </div>
+
+        <!-- Navigation Links Section -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="footer-nav-links">
+                <li class="nav-item"><a class="nav-link active" href="index.html"><b>Home</b></a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html"><b>About Us</b></a></li>
+                <li class="nav-item"><a class="nav-link" href="report.html"><b>Report</b></a></li>
+                <li class="nav-item"><a class="nav-link" href="safety.html"><b>Safety Tips</b></a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html"><b>Contact</b></a></li>
+            </ul>
+            <a href="report.html" class="report-button ms-lg-3"><b>Report an Incident</b></a>
+        </div>
+        
+        <!-- Talk to Us Section -->
+        <div class="footer-section">
+            <h3>Talk to Us</h3>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" class="form-input">
+                <input type="email" placeholder="Your Email" class="form-input">
+                <textarea placeholder="Message" class="form-input"></textarea>
+                <button type="submit" class="form-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Footer Bottom Section -->
+    <div class="footer-bottom">
+        <p> copyright: <span id="current-year"></span> © 2024 Mulika Ajali Initiative. All Rights Reserved.</p>
+        <p>Website crafted with <span class="heart">♥ Eskah</span> for safer roads.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
