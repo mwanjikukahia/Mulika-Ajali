@@ -38,7 +38,7 @@ let lastScrollTop = 0; // Store the last scroll position
       const updateCounter = () => {
         const target = +counter.getAttribute('data-target');
         const count = +counter.innerText;
-        const increment = target / 10000; // Adjust speed by changing this value
+        const increment = target / 1000; // Adjust speed by changing this value
         if (count < target) {
           counter.innerText = Math.ceil(count + increment);
           setTimeout(updateCounter, 10);
