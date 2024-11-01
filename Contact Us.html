@@ -1,13 +1,193 @@
-<section class="p-6 max-w-xl mx-auto">
-    <h2 class="text-2xl font-semibold text-blue-800 text-center">Get in Touch</h2>
-    <form class="mt-6">
-      <label class="block mb-2 text-gray-700">Name:</label>
-      <input type="text" class="border rounded w-full p-2" required>
-      <label class="block mt-4 mb-2 text-gray-700">Email:</label>
-      <input type="email" class="border rounded w-full p-2" required>
-      <label class="block mt-4 mb-2 text-gray-700">Message:</label>
-      <textarea class="border rounded w-full p-2" rows="4" required></textarea>
-      <button type="submit" class="bg-yellow-500 text-blue-800 p-2 mt-6 rounded">Send Message</button>
-    </form>
-  </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mulika Ajali Initiative - Home</title>
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="Contact Us.css">
+</head>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/67202b442480f5b4f5956162/1ibaqi1op';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+<body>
+    <div class="top-header">
+        <div class="social-media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="contact-info">
+            <a href="mailto:okoamaisha@mulikaajali.co.ke"><i class="fas fa-envelope"></i> okoamaisha@mulikaajali.co.ke</a>
+            <a href="tel:+123456789"><i class="fas fa-phone"></i> +123 456 789</a>
+        </div>
+        <button class="cta-button">Donate</button>
+    </div>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"></a>
+      <div class="logo">
+        <img src="images/Logo1.jpg" alt="Logo" width="70" height="65">
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html"><B>Home</B></a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html"><b>About Us</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="report.html"><b>Get Involved</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="safety.html"><b>Safety Tips</b></a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html"><b>Contact</b></a></li>
+        </ul>
+        <a href="report.html" class="report-button ms-lg-3"><b>Report an Incident</b></a>
+      </div>
+    </div>
+    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+  </nav>
+
+<!-- Slide-out Menu -->
+<div class="side-menu" id="sideMenu">
+  <button class="close-btn" onclick="toggleMenu()">✕</button>
+  <div class="menu-content">
+      <img src="images/Logo1.jpg" alt="Mulika Ajali Logo" class="menu-logo">
+      <h4><b>About Us</b></h4>
+      <p>Mulika Ajali Initiative  focuses on road safety and accident awareness...</p>
+      <h4><b>Contact Us</b></h4>
+      <p>okoamaisha@mulikaajali.or.ke<br>+254 712 345 678<br>View Park Towers, Nairobi, Kenya. <br> Address: 20717-00100</p>
+      <!-- Social Icons (add your own links and icons here) -->
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <!-- Additional Menu Links -->
+      <nav class="menu-links">
+          <a href="#">Home</a>
+          <a href="#">News</a>
+          <a href="#">Events</a>
+          <a href="#">Donate</a>
+      </nav>
+  </div>
+</div>
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+<!-- Donate button for small screens -->
+<button class="donate-btn" id="donateButton" onclick="window.location.href='doonate.html'">Donate</button>
   
+<!-- calling section  -->
+<header class="contact-part">
+  <div class="part-content">
+      <h1>Contact Us</h1>
+  </div>
+</header>
+
+<!-- Contact Info Section -->
+<section class="contact-info">
+  <div class="contact-card">
+      <div class="contact-icon">📧</div>
+      <h2>Send Us Mail</h2>
+      <p>okoamaisha@mulikaajali.co.ke</p>
+      <p>support@mulikaajali.co.ke</p>
+  </div>
+  <div class="contact-card">
+      <div class="contact-icon">📞</div>
+      <h2>Call Us Anytime</h2>
+      <p>+254 768 69 28 59</p>
+      <p>Toll Free: *123*4#</p>
+  </div>
+  <div class="contact-card">
+      <div class="contact-icon">📍</div>
+      <h2>Visit Our Office</h2>
+      <p>View Park Towers (17th Floor), Utalii Street, Commercial</p>
+      <p>Nairobi, Kenya</p>
+  </div>
+</section>
+<!-- email us  -->
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-container">
+        
+        <!-- Location Map Section -->
+        <div class="footer-section">
+            <h3>Our Location</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d31910.572591709257!2d36.7961929084298!3d-1.280744340262088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d-1.2787278!2d36.8176506!4m5!1s0x182f10d23eb49bbb%3A0xf5ebdd7d189417a1!2sNairobi!3m2!1d-1.2828469999999998!2d36.8159352!5e0!3m2!1sen!2ske!4v1729951150466!5m2!1sen!2ske" class="map" allowfullscreen="" loading="lazy"></iframe>
+            <p>Mulika Ajali Initiative HQ<br>View Park Towers, Utalii Street, Nairobi, Kenya</p>
+
+                    <!-- Social Links Section -->
+            <h3>Follow Us</h3>
+            <p>Stay connected with us on social media:</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p class="hashtag"><b>#TogetherForRoadSafety</b></p>
+        </div>
+        <!-- Get Involved Section -->
+        <div class="footer-section">
+            <h3>Get Involved</h3>
+            <ul class="involved-links">
+                <li><a href="#">Become a Volunteer</a></li>
+                <li><a href="#">Donate to Support Us</a></li>
+                <li><a href="#">Partner with Us</a></li>
+                <li><a href="#">Report a Safety Issue</a></li>
+            </ul>
+            <p><b>Your support makes a safer world.</b></p>
+            <p class="donation-reminder"><strong><b>Remember:</b></strong> Your donations directly support our initiatives for road safety and community welfare!</p>
+        </div>
+
+        <!-- Navigation Links Section -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="footer-nav-links">
+                <li class="nav-item"><a class="nav-link active" href="index.html"><b>Home</b></a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html"><b>About Us</b></a></li>
+                <li class="nav-item"><a class="nav-link" href="report.html"><b>Report</b></a></li>
+                <li class="nav-item"><a class="nav-link" href="safety.html"><b>Safety Tips</b></a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html"><b>Contact</b></a></li>
+            </ul>
+            <a href="report.html" class="report-button ms-lg-3"><b>Report an Incident</b></a>
+        </div>
+        
+        <!-- Talk to Us Section -->
+        <div class="footer-section">
+            <h3>Talk to Us</h3>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" class="form-input">
+                <input type="email" placeholder="Your Email" class="form-input">
+                <textarea placeholder="Message" class="form-input"></textarea>
+                <button type="submit" class="form-button">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <!-- Footer Bottom Section -->
+    <div class="footer-bottom">
+        <p> copyright: <span id="current-year"></span> © 2024 Mulika Ajali Initiative. All Rights Reserved.</p>
+        <p>Website crafted with <span class="heart">Eskah_Solutions</span> for safer roads.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
